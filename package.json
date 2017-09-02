@@ -1,0 +1,18 @@
+{
+  "name": "jquery-tab-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "MJ PC Lab",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "jquery": "1.x",
+    "jquery-tab": "^0.18.5",
+    "style-loader": "^0.18.2"
+  }
+}
