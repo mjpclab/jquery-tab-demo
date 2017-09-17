@@ -2,11 +2,17 @@
   "name": "jquery-tab-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "src/js/main.js",
-  "scripts": {},
+  "main": "src/ts/index.js",
+  "scripts": {
+    "ts": "tsc -p src/ts/",
+    "build": "sh -c 'rm -rf dist/*; tsc; webpack;'"
+  },
   "author": "MJ PC Lab",
   "license": "ISC",
   "devDependencies": {
+    "@types/jquery": "^3.2.12",
+    "awesome-typescript-loader": "^3.2.3",
+    "typescript": "^2.5.2",
     "webpack": "^3.6.0"
   },
   "dependencies": {

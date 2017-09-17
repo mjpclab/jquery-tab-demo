@@ -2,11 +2,22 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = [{
-	entry: './src/js/main.js',
+	entry: './src/ts/main.ts',
 	output: {
 		libraryTarget: 'umd',
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js'
+	},
+	resolve: {
+		extensions: ['.ts', '.tsx', '.js', '.jsx']
+	},
+	module: {
+		rules: [
+			{
+				test: /\.tsx?$/,
+				loader: 'awesome-typescript-loader'
+			}
+		]
 	},
 	plugins: [
 		new webpack.DefinePlugin({
@@ -17,15 +28,25 @@ module.exports = [{
 	],
 	devtool: 'source-map'
 }, {
-	entry: './src/js/with-css.js',
+	entry: './src/ts/with-css.ts',
 	output: {
 		libraryTarget: 'umd',
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle-with-css.js'
 	},
+	resolve: {
+		extensions: ['.ts', '.tsx', '.js', '.jsx']
+	},
 	module: {
 		rules: [
-			{test: /\.css$/, use: ['style-loader', 'css-loader']}
+			{
+				test: /\.css$/,
+				loader: ['style-loader', 'css-loader']
+			},
+			{
+				test: /\.tsx?$/,
+				loader: 'awesome-typescript-loader'
+			}
 		]
 	},
 	plugins: [
