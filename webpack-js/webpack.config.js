@@ -8,6 +8,14 @@ module.exports = [{
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js'
 	},
+	/*externals: {
+		jquery: {
+			commonjs: 'jquery',
+			commonjs2: 'jquery',
+			amd: 'jquery',
+			root: 'jQuery'
+		}
+	},*/
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {
@@ -23,6 +31,14 @@ module.exports = [{
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle-with-css.js'
 	},
+	/*externals: {
+		jquery: {
+			commonjs: 'jquery',
+			commonjs2: 'jquery',
+			amd: 'jquery',
+			root: 'jQuery'
+		}
+	},*/
 	module: {
 		rules: [
 			{test: /\.css$/, use: ['style-loader', 'css-loader']}

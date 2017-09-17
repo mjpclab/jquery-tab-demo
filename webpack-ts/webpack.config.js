@@ -8,6 +8,14 @@ module.exports = [{
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js'
 	},
+	/*externals: {
+		jquery: {
+			commonjs: 'jquery',
+			commonjs2: 'jquery',
+			amd: 'jquery',
+			root: 'jQuery'
+		}
+	},*/
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js', '.jsx']
 	},
@@ -34,6 +42,14 @@ module.exports = [{
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle-with-css.js'
 	},
+	/*externals: {
+		jquery: {
+			commonjs: 'jquery',
+			commonjs2: 'jquery',
+			amd: 'jquery',
+			root: 'jQuery'
+		}
+	},*/
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js', '.jsx']
 	},

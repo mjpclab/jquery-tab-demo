@@ -4,7 +4,6 @@
   "description": "",
   "main": "src/ts/index.js",
   "scripts": {
-    "ts": "tsc -p src/ts/",
     "build": "sh -c 'rm -rf dist/*; tsc; webpack;'"
   },
   "author": "MJ PC Lab",
