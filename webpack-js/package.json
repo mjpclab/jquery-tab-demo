@@ -7,11 +7,11 @@
   "author": "MJ PC Lab",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^3.6.0"
+    "webpack": "^3.10.0"
   },
   "dependencies": {
-    "css-loader": "^0.28.7",
-    "jquery": "1.x",
+    "css-loader": "^0.28.9",
+    "jquery": "latest",
     "jquery-tab": "^1.0.3",
     "style-loader": "^0.18.2"
   }
