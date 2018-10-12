@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/js/main.js",
-  "scripts": {},
+  "scripts": {
+    "build": "sh -c 'rm -rf dist/*; webpack;'"
+  },
   "author": "MJ PC Lab",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^3.10.0"
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "css-loader": "^0.28.9",
     "jquery": "latest",
-    "jquery-tab": "^1.0.3",
-    "style-loader": "^0.18.2"
+    "jquery-tab": "^2.0.0"
   }
 }
