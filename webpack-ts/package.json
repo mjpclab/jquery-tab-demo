@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "jquery-tab": "^2.0.0"
+    "jquery-tab": "^3.0.3"
   }
 }
