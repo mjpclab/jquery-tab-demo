@@ -9,16 +9,16 @@
   "author": "MJ PC Lab",
   "license": "ISC",
   "devDependencies": {
-    "@types/jquery": "^3.3.11",
+    "@types/jquery": "^3.3.29",
     "awesome-typescript-loader": "^5.2.1",
-    "css-loader": "^1.0.0",
-    "style-loader": "^0.23.0",
-    "typescript": "^3.1.1",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "jquery-tab": "^3.0.3"
+    "jquery-tab": "^3.2.0"
   }
 }
