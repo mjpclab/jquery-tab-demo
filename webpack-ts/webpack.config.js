@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-	mode: 'production',
+	mode: 'none',
 	entry: './src/ts/main.ts',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
