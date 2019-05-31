@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import 'jquery-tab';
-import 'jquery-tab/src/built/theme/gray';
+import 'jquery-tab/dist/theme/gray.css';
 
 import './main.css';
 

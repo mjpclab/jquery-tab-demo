@@ -57,7 +57,7 @@
         labelContainerClass: 'label-container',
         showHeaderLabelContainer: true,
         showFooterLabelContainer: false,
-        labelItemTemplate: '<label></label>',
+        labelItemTemplate: '<span></span>',
         labelItemClass: 'label-item',
         panelContainerTemplate: '<div></div>',
         panelContainerClass: 'panel-container',
@@ -769,7 +769,7 @@
                 }
                 var $rest = $title.nextUntil(titleSelector);
                 var tabItem = {
-                    title: fnGetTitleContent.call($sourceRegion, $title, $rest),
+                    title: $$1(fnGetTitleContent.call($sourceRegion, $title, $rest)).clone(),
                     content: $$1([]).add($title).add($rest),
                     name: fnGetTabItemName.call($sourceRegion, $title, $rest),
                     disabled: fnIsTabItemDisabled.call($sourceRegion, $title, $rest),
@@ -1410,13 +1410,9 @@
         tabPlugin.call($regions);
     }
 
-    function registerPlugin(pluginName) {
-        $$1.fn[pluginName] = tabPlugin;
-    }
-
     var enabled = false;
-    function enablePlugin(pluginName) {
-        registerPlugin(pluginName);
+    function enablePlugin() {
+        $$1.fn.tab = tabPlugin;
         if (!enabled) {
             enabled = true;
             applyDefaultRegion();
@@ -1424,7 +1420,7 @@
     }
 
     /// <reference path='./type/public.d.ts' />
-    enablePlugin('tab');
+    enablePlugin();
 
     return $$1;
 
