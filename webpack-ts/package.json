@@ -18,7 +18,7 @@
     "webpack-cli": "^3.3.2"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "latest",
     "jquery-tab": "^4.0.0"
   }
 }
